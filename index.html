@@ -1,14 +1,1391 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101321"><meta name="description" content="ORPANTA by ARKVANTA — practical digital books for curious minds."><title>ORPANTA — Books for the curious</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
-:root{--bg:#101321;--panel:#191e30;--ink:#f5f3ef;--muted:#a4a9b9;--line:#ffffff19;--lav:#d4c7ff;--gold:#d7bd91;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px var(--sans);line-height:1.6}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.announce{text-align:center;background:#1b1e30;color:#c7c8d3;padding:8px;font-size:10px;letter-spacing:.1em}.head{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(20px,calc((100% - 1120px)/2));border-bottom:1px solid var(--line);position:sticky;top:0;background:#101321ed;backdrop-filter:blur(12px);z-index:5}.brand{display:flex;gap:10px;align-items:center;color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:.15em}.mark{width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:23px var(--serif)}.brand small{display:block;color:var(--gold);font-size:8px;letter-spacing:.25em}.nav{display:flex;gap:30px}.nav a,.foot a{color:#c1c4d0;text-decoration:none;font-size:12px}.actions{display:flex;align-items:center;gap:14px}.actions select,.bag{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:8px;font:11px var(--sans)}.actions option{background:var(--bg)}.bag{cursor:pointer}.bag b{background:var(--lav);color:#171426;border-radius:50%;padding:3px 7px;margin-left:4px}.hero{min-height:530px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.eyebrow{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.2em}.hero h1{font:600 clamp(48px,6vw,75px)/1.08 var(--serif);letter-spacing:-.04em;margin:22px 0}.hero h1 em{color:var(--lav);font-weight:500}.hero p,.muted{color:var(--muted);line-height:1.9;max-width:460px}.btn{display:inline-flex;gap:18px;align-items:center;background:var(--lav);color:#171426;text-decoration:none;border:0;padding:14px 19px;font-weight:700;font-size:12px;cursor:pointer;margin-top:18px}.art{height:390px;display:grid;place-items:center;position:relative}.art:before,.art:after{content:'';position:absolute;border:1px solid #bba7ff2b;border-radius:50%;width:420px;height:260px;transform:rotate(-25deg)}.art:after{width:500px;height:320px}.book{position:relative;width:220px;height:300px;padding:22px;background:linear-gradient(145deg,#343051,#171b30 70%,#292442);border:1px solid #ffffff55;box-shadow:22px 28px 28px #0008;transform:rotate(-8deg);z-index:1}.book:before{content:'';position:absolute;left:-12px;top:5px;width:12px;height:295px;background:#302a48;transform:skewY(-8deg)}.book .title{font:600 49px/.92 var(--serif);margin-top:55px}.book i{color:var(--lav)}.book small{display:block;color:#d0c9df;font-size:8px;letter-spacing:.16em;margin-top:15px}.book .top{font-size:8px;letter-spacing:.2em;color:var(--gold)}.section{padding:90px 0}.section h2,.about h2,.next h2{font:500 clamp(34px,4vw,48px)/1.15 var(--serif);margin:12px 0}.feature{margin-top:30px;background:linear-gradient(110deg,#191e30,#151929);border:1px solid var(--line);padding:40px;display:grid;grid-template-columns:300px 1fr;gap:55px;align-items:center}.cover{width:240px;height:330px;margin:auto;padding:22px;background:linear-gradient(145deg,#343051,#171b30 70%,#292442);box-shadow:18px 22px 28px #0007;position:relative}.cover .title{font:600 59px/.9 var(--serif);margin-top:62px}.cover i{color:var(--lav)}.cover small{display:block;font-size:8px;letter-spacing:.15em;color:#ccc;margin-top:15px}.feature h3{font:500 30px/1.25 var(--serif);margin:18px 0 6px}.meta{color:#aeb1c0;font-size:10px;letter-spacing:.1em}.pill{color:var(--lav);border:1px solid #d4c7ff66;padding:5px 8px;margin-right:10px}.feature ul{color:#b9bdca;font-size:12px;line-height:2;padding-left:18px}.price{font:28px var(--serif);margin-right:20px}.price small{font:10px var(--sans);color:var(--muted)}.cats{background:#151929;padding:80px 0}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:28px}.cat{border:1px solid var(--line);padding:20px 15px;min-height:150px;color:var(--ink);text-decoration:none;background:#ffffff05}.cat:hover{border-color:#d4c7ff88;background:#ffffff0c}.cat span{display:block;color:var(--lav);font-size:22px;margin-bottom:18px}.cat b{font:500 14px var(--serif)}.cat small{display:block;color:#969aaa;font-size:9px;margin-top:8px}.about{padding:95px 0;display:grid;grid-template-columns:220px 1fr;gap:55px;align-items:center}.seal{height:160px;width:160px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:90px var(--serif);margin:auto}.next{padding:32px 38px;background:#1a1f32;border:1px solid var(--line);margin-bottom:85px;display:flex;justify-content:space-between;align-items:center}.next p{color:var(--muted)}.foot{border-top:1px solid var(--line);padding:32px max(20px,calc((100% - 1120px)/2));display:flex;justify-content:space-between;gap:20px;color:#888da0;font-size:10px}.drawer{position:fixed;right:-430px;top:0;height:100vh;width:min(420px,100%);background:#191e30;z-index:20;padding:25px;transition:.25s;display:flex;flex-direction:column}.drawer.open{right:0}.shade{position:fixed;inset:0;background:#0009;z-index:19;display:none}.shade.show{display:block}.drawer h2{font:26px var(--serif)}.close{float:right;background:none;color:white;border:0;font-size:26px;cursor:pointer}.items{flex:1}.lineitem{padding:16px 0;border-bottom:1px solid var(--line);font-size:12px}.drawerfoot{border-top:1px solid var(--line);padding-top:18px}.drawerfoot button{width:100%}.dialog{width:min(500px,calc(100% - 25px));background:#191e30;color:var(--ink);border:1px solid var(--line);padding:25px}.dialog::backdrop{background:#000b}.dialog label{display:block;font-size:11px;margin:14px 0}.dialog input{width:100%;padding:12px;background:#101321;border:1px solid #ffffff33;color:white;margin-top:7px}.qr{padding:22px;border:1px dashed #8e82b9;text-align:center;color:#bcb2df;font-size:10px;margin:15px 0}.fine{color:#9da2b2;font-size:10px;line-height:1.6}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--lav);color:#171426;padding:12px 18px;z-index:30;display:none;font-size:11px}.toast.show{display:block}@media(max-width:800px){.feature{grid-template-columns:240px 1fr;gap:25px;padding:25px}.grid{grid-template-columns:repeat(3,1fr)}.nav{gap:15px}}@media(max-width:600px){.head{padding:0 14px;height:68px}.nav{display:none}.hero{display:block;padding-top:55px}.hero h1{font-size:55px}.art{height:330px}.section{padding:65px 0}.feature{display:block;padding:22px}.cover{margin-bottom:28px}.grid{grid-template-columns:repeat(2,1fr)}.about{display:block;padding:70px 0}.seal{margin-bottom:30px}.next{display:block;padding:25px}.foot{display:block}.foot>*{display:block;margin:10px 0}.actions{gap:7px}.actions select{padding:7px 4px}.book{transform:scale(.88) rotate(-8deg)}}
-</style></head><body>
-<header class="head"><a class="brand" href="#"><span class="mark">O</span><span>ORPANTA<small>BY ARKVANTA</small></span></a><div class="actions"><select id="currency" aria-label="Currency"><option value="INR">INR ₹</option><option value="USD">USD $</option><option value="EUR">EUR €</option></select><button class="bag" id="openBag">Bag <b id="count">0</b></button></div></header>
-<main><section class="section wrap" id="books"><div class="eyebrow">ORPANTA BOOKSTORE</div><h2>Available books</h2><article class="feature"><div class="cover"><div class="top">ARKVANTA · 01</div><div class="title">AI<br><i>Made</i><br>Simple</div><small>LEARN · EXPLORE · CREATE</small></div><div><div class="meta"><span class="pill">BEGINNER FRIENDLY</span> PDF · DIGITAL BOOK</div><h3>AI Made Simple: A Beginner’s Guide to Everyday AI Tools</h3><p class="muted">Published by <b>ARKVANTA</b></p><p class="muted">A practical introduction to everyday artificial intelligence, core AI concepts, useful tools, prompt writing and responsible use.</p><b class="meta">WHAT'S INSIDE</b><ul><li>Understand AI, prompts and everyday tools</li><li>Use AI for writing, learning and creative tasks</li><li>Check AI-generated information responsibly</li><li>Practise with reusable prompts and a 7-day challenge</li></ul><div><span class="price" id="price">₹49 <small>one-time</small></span><button class="btn" id="add">Add to bag ＋</button></div><p class="fine">Digital product · Payment is manually verified before download access.</p></div></article></section></main>
-<footer class="foot"><span>© <span id="year"></span> ORPANTA · ARKVANTA</span><span>Digital books only.</span></footer>
-<div class="shade" id="shade"></div><aside class="drawer" id="drawer"><button class="close" id="close">×</button><div class="eyebrow">YOUR SELECTION</div><h2>Your bag (<span id="n">0</span>)</h2><div class="items" id="items">Your bag is waiting for a good read.</div><div class="drawerfoot"><p>Total <b id="total">₹0</b></p><button class="btn" id="checkout" disabled>Continue to checkout →</button><p class="fine">UPI payments are verified manually before downloads are released.</p></div></aside>
-<dialog class="dialog" id="payment"><form id="payform"><button type="button" class="close" id="dismiss">×</button><div class="eyebrow">ALMOST YOURS</div><h2 style="font:28px var(--serif)">Checkout</h2><p id="summary"></p><label>Your email<input type="email" id="email" required placeholder="you@example.com"></label><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=upi%3A%2F%2Fpay%3Fpa%3Darockiyamahipen05%2540okhdfcbank%26pn%3DArockiya%2520Mahipen%26am%3D49%26cu%3DINR%26tn%3DORPANTA%2520ebook" alt="Scan to pay ₹49 using UPI" width="220" height="220" style="display:block;margin:0 auto 14px;background:white;padding:8px;border-radius:8px"><br>Scan to pay ₹49 with any UPI app<br><br>UPI ID: <b id="upiId">arockiyamahipen05@okhdfcbank</b><br><br><button type="button" class="btn" id="copyUpi">Copy UPI ID</button> <a class="btn" id="payUpi" href="upi://pay?pa=arockiyamahipen05%40okhdfcbank&amp;pn=Arockiya%20Mahipen&amp;am=49&amp;cu=INR&amp;tn=ORPANTA%20ebook">Pay ₹49 via UPI app</a></div><p class="fine">Pay the exact INR amount using the store's configured UPI ID, then enter the UTR below. This demo does not process or verify payments.</p><label>UPI UTR / transaction reference<input id="utr" required minlength="6" placeholder="Enter UTR after payment"></label><button class="btn" type="submit">Submit for manual verification</button></form></dialog><div class="toast" id="toast"></div>
-<script>
-const book={id:'ai-made-simple',title:'AI Made Simple: A Beginner’s Guide to Everyday AI Tools',price:49};let bag=JSON.parse(localStorage.getItem('orpanta-bag')||'[]'),currency='INR';const rate={INR:1,USD:.012,EUR:.011},symbol={INR:'₹',USD:'$',EUR:'€'};const el=id=>document.getElementById(id);function cash(n){let v=n*rate[currency];return symbol[currency]+(currency==='INR'?Math.round(v):v.toFixed(2))}function save(){localStorage.setItem('orpanta-bag',JSON.stringify(bag));draw()}function draw(){el('count').textContent=el('n').textContent=bag.length;el('items').innerHTML=bag.length?bag.map(x=>'<div class="lineitem">'+x.title+'<br><b>'+cash(x.price)+'</b> <button data-remove style="background:none;border:0;color:#cbbcff;cursor:pointer">Remove</button></div>').join(''):'Your bag is waiting for a good read.';el('total').textContent=cash(bag.reduce((s,x)=>s+x.price,0));el('checkout').disabled=!bag.length}function say(t){el('toast').textContent=t;el('toast').classList.add('show');setTimeout(()=>el('toast').classList.remove('show'),2600)}function showBag(v){el('drawer').classList.toggle('open',v);el('shade').classList.toggle('show',v)}el('add').onclick=()=>{if(!bag.length){bag.push(book);save();say('Added to your bag.')}else say('This book is already in your bag.')};el('openBag').onclick=()=>showBag(true);el('close').onclick=el('shade').onclick=()=>showBag(false);el('items').onclick=e=>{if(e.target.hasAttribute('data-remove')){bag=[];save()}};el('currency').onchange=e=>{currency=e.target.value;el('price').innerHTML=cash(49)+' <small>one-time · approximate display</small>';draw()};el('checkout').onclick=()=>{showBag(false);el('summary').textContent='Order total: '+cash(bag.reduce((s,x)=>s+x.price,0))+(currency==='INR'?'':' (approximate display; UPI payable amount is INR ₹'+bag.reduce((s,x)=>s+x.price,0)+')');el('payment').showModal()};el('dismiss').onclick=()=>el('payment').close();el('copyUpi').onclick=async()=>{try{await navigator.clipboard.writeText('arockiyamahipen05@okhdfcbank');say('UPI ID copied.')}catch(e){say('UPI ID: arockiyamahipen05@okhdfcbank')}};el('payform').onsubmit=e=>{e.preventDefault();let orders=JSON.parse(localStorage.getItem('orpanta-pending-orders')||'[]');orders.push({id:'ORP-'+Date.now(),email:el('email').value,utr:el('utr').value,amountINR:49,status:'PENDING_MANUAL_VERIFICATION',createdAt:new Date().toISOString()});localStorage.setItem('orpanta-pending-orders',JSON.stringify(orders));el('payment').close();bag=[];save();e.target.reset();say('Saved on this device only. Payment is NOT verified.')};el('year').textContent=new Date().getFullYear();draw();
-</script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="ORPANTA by ARKVANTA — premium digital books for curious minds.">
+  <title>ORPANTA | Premium Digital Library</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+    :root {
+      --bg: #0c1220;
+      --bg-2: #111827;
+      --panel: #121b2c;
+      --panel-2: #1b2438;
+      --soft: #1e293b;
+      --ink: #f6f1ea;
+      --muted: #c4c9d8;
+      --line: rgba(255,255,255,0.08);
+      --lav: #d9c9ff;
+      --gold: #d7bd91;
+      --rose: #f4c7d5;
+      --mint: #cde9d8;
+      --shadow: 0 25px 70px rgba(3, 6, 18, 0.42);
+      --radius: 24px;
+      --container: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(217, 201, 255, 0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(215, 189, 145, 0.12), transparent 25%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, select, input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(12, 18, 32, 0.68);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.88rem;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0a1020;
+      display: grid;
+      place-items: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(217, 201, 255, 0.25);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand small {
+      margin-top: 5px;
+      color: var(--muted);
+      letter-spacing: 0.24em;
+      font-size: 0.56rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover { color: var(--ink); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .select-shell {
+      position: relative;
+    }
+
+    .select-shell select {
+      appearance: none;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      border-radius: 999px;
+      height: 42px;
+      padding: 0 42px 0 14px;
+      cursor: pointer;
+    }
+
+    .select-shell::after {
+      content: '▾';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+      font-size: 0.8rem;
+    }
+
+    .bag-btn, .primary-btn, .ghost-btn {
+      border: 0;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .bag-btn:hover, .primary-btn:hover, .ghost-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .bag-btn {
+      background: rgba(255,255,255,0.04);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      height: 42px;
+      padding: 0 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .bag-pill {
+      min-width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0a1020;
+      display: grid;
+      place-items: center;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 76px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.23em;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.9rem, 5vw, 5rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
+      font-weight: 700;
+    }
+
+    h2, h3 {
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .hero-copy p {
+      margin: 22px 0 26px;
+      color: var(--muted);
+      font-size: 1.06rem;
+      max-width: 620px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .primary-btn {
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0f172a;
+      height: 52px;
+      padding: 0 24px;
+      box-shadow: 0 18px 30px rgba(217, 201, 255, 0.18);
+    }
+
+    .ghost-btn {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      height: 52px;
+      padding: 0 22px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-meta strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.4rem;
+      margin-bottom: 2px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 610px;
+      display: grid;
+      place-items: center;
+    }
+
+    .book-card-xl {
+      width: min(100%, 470px);
+      height: 560px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgba(15,24,43,0.75), rgba(17,24,39,0.9));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .book-glow {
+      position: absolute;
+      inset: auto auto -100px -55px;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(217, 201, 255, 0.5), transparent 58%);
+      filter: blur(10px);
+    }
+
+    .book-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .book-cover {
+      position: relative;
+      z-index: 2;
+      border-radius: 24px;
+      padding: 28px 22px;
+      background: linear-gradient(145deg, #d9c9ff 0%, #f6d7b0 20%, #cfe8d8 100%);
+      color: #0e1528;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+    }
+
+    .book-cover .tag {
+      display: inline-flex;
+      align-self: flex-start;
+      background: rgba(15, 23, 42, 0.14);
+      border: 1px solid rgba(15,23,42,0.18);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .book-cover .title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.1rem, 3vw, 3rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 220px;
+      font-weight: 700;
+    }
+
+    .book-cover .author {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+
+    .book-info {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .book-price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .book-price small {
+      font-size: 0.74rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-left: 6px;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+      font-size: 0.8rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section-shell {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 3vw, 3rem);
+      letter-spacing: -0.05em;
+    }
+
+    .section-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 500px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .feature-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(217,201,255,.22), rgba(215,189,145,.20));
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+
+    .feature-box h3 {
+      font-size: 1.5rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 18px;
+    }
+
+    .book-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .book-card-cover {
+      position: relative;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .book-card-cover::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), transparent 50%);
+      pointer-events: none;
+    }
+
+    .mini-cover {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 220px);
+      min-height: 200px;
+      border-radius: 18px;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #0e1528;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 20px 30px rgba(2,7,18,0.2);
+    }
+
+    .mini-cover .meta {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .mini-cover .headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      font-weight: 700;
+    }
+
+    .book-card-body {
+      padding: 20px 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .book-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .book-card-body h3 {
+      font-size: 1.5rem;
+      letter-spacing: -0.04em;
+      margin: 0;
+    }
+
+    .book-card-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .book-actions {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .price-tag {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .price-tag strong {
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-left: 6px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .add-btn {
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0f172a;
+      height: 42px;
+      padding: 0 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .about-panel p {
+      color: var(--muted);
+      margin: 14px 0 0;
+      font-size: 1.02rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.8rem;
+      letter-spacing: -0.06em;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .quote-box {
+      position: relative;
+      min-height: 280px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(217,201,255,.12), rgba(215,189,145,.08));
+      border: 1px solid var(--line);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .quote-box::before {
+      content: '“';
+      position: absolute;
+      right: 26px;
+      top: 18px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 8rem;
+      line-height: 1;
+      color: rgba(255,255,255,0.12);
+    }
+
+    .quote-box p {
+      position: relative;
+      z-index: 1;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 2.5vw, 2.9rem);
+      margin: 0 0 18px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .quote-box span {
+      position: relative;
+      z-index: 1;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+    }
+
+    .site-footer {
+      padding: 26px 0 54px;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+    }
+
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 13, 20, 0.56);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease;
+      z-index: 90;
+    }
+
+    .drawer-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(440px, 100%);
+      height: 100vh;
+      background: rgba(12, 18, 32, 0.96);
+      border-left: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      transform: translateX(110%);
+      transition: transform 0.24s ease;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer.open {
+      transform: translateX(0%);
+    }
+
+    .drawer-header, .drawer-body, .drawer-footer {
+      padding: 20px 22px;
+    }
+
+    .drawer-header {
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .drawer-header h3 {
+      font-size: 1.3rem;
+      letter-spacing: -0.04em;
+    }
+
+    .close-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .drawer-body {
+      flex: 1;
+      overflow: auto;
+    }
+
+    .bag-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .bag-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 12px;
+    }
+
+    .bag-cover {
+      width: 62px;
+      height: 84px;
+      border-radius: 12px;
+      color: #0f172a;
+      display: grid;
+      place-items: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .bag-item h4 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      letter-spacing: -0.03em;
+    }
+
+    .bag-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .qty {
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .remove-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0;
+    }
+
+    .drawer-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .totals {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .totals strong {
+      font-size: 1.5rem;
+      color: var(--ink);
+      letter-spacing: -0.05em;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      height: 52px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0e1528;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .empty-state {
+      color: var(--muted);
+      text-align: center;
+      padding: 26px 0;
+      border: 1px dashed rgba(255,255,255,0.12);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.01);
+    }
+
+    .dialog {
+      width: min(520px, calc(100% - 28px));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 0;
+      background: rgba(12,18,32,0.97);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    .dialog::backdrop {
+      background: rgba(5,9,17,0.64);
+    }
+
+    .dialog-inner {
+      padding: 22px 22px 20px;
+    }
+
+    .dialog-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .dialog-head h3 {
+      font-size: 1.8rem;
+      letter-spacing: -0.05em;
+    }
+
+    .pay-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .pay-form label {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .pay-form input {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--ink);
+      padding: 12px 14px;
+      outline: none;
+    }
+
+    .pay-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .dialog-submit {
+      margin-top: 6px;
+      height: 52px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--lav), var(--gold));
+      color: #0c1220;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid,
+      .feature-grid,
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 500px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+      }
+
+      .section-shell {
+        padding: 20px 16px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .pay-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="ORPANTA home">
+        <span class="brand-mark">O</span>
+        <span class="brand-text">
+          <span>ORPANTA</span>
+          <small>BY ARKVANTA</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#books">Books</a>
+        <a href="#why-us">Why us</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="select-shell">
+          <select id="currency" aria-label="Choose currency">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="AED">AED</option>
+          </select>
+        </div>
+        <button class="bag-btn" id="bagToggle" type="button" aria-label="Open shopping bag">
+          Bag
+          <span class="bag-pill" id="bagcount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">ORPANTA BOOKSTORE</span>
+          <h1>Read the ideas shaping tomorrow.</h1>
+          <p>Thoughtful digital books for professionals, students, and curious minds who want clarity, depth, and practical insight without the noise.</p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="#books">Explore the library</a>
+            <a class="ghost-btn" href="#about">Our philosophy</a>
+          </div>
+
+          <div class="hero-meta">
+            <div><strong>35k+</strong> readers</div>
+            <div><strong>120+</strong> curated titles</div>
+            <div><strong>4.9/5</strong> average rating</div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Featured digital book">
+          <div class="book-card-xl">
+            <div class="book-glow"></div>
+            <div class="book-top">
+              <span>ARKVANTA • 01</span>
+              <span>Digital edition</span>
+            </div>
+
+            <div class="book-cover">
+              <span class="tag">Featured</span>
+              <div class="title">AI Made<br>Simple</div>
+              <div class="author">By ARKVANTA</div>
+            </div>
+
+            <div class="book-info">
+              <div class="book-price"><span id="featuredPrice">₹3,399</span><small>read now</small></div>
+              <span class="mini-badge">Instant access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Why readers choose us</span>
+              <h2>Built for meaningful learning.</h2>
+            </div>
+            <p>We curate books that make complex topics clear and usable—without overwhelming the reader.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-box">
+              <div class="feature-icon">✦</div>
+              <h3>Curated for clarity</h3>
+              <p>Every title is selected to balance insight, structure, and practical value.</p>
+            </article>
+
+            <article class="feature-box">
+              <div class="feature-icon">◎</div>
+              <h3>Professional perspective</h3>
+              <p>Actionable ideas written for real work, growth, and decision-making.</p>
+            </article>
+
+            <article class="feature-box">
+              <div class="feature-icon">▣</div>
+              <h3>Instant digital access</h3>
+              <p>Read anywhere, on any device, with a seamless and distraction-free format.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="books">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Featured collection</span>
+            <h2>Available books</h2>
+          </div>
+          <p>Hand-picked digital books for creators, builders, and lifelong learners.</p>
+        </div>
+
+        <div class="catalog-grid" id="catalog"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <span class="eyebrow">About ORPANTA</span>
+          <h2>We turn complex ideas into useful knowledge.</h2>
+          <p>ORPANTA exists to help readers move from curiosity to confidence. Our catalog focuses on digital-first learning, practical strategy, and thoughtful writing that respects your time.</p>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>12+</strong>
+              <span>years of editorial thinking</span>
+            </div>
+            <div class="stat">
+              <strong>95%</strong>
+              <span>reader satisfaction</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>digital access</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-box" id="reviews">
+          <p>“The kind of learning experience that feels premium, polished, and genuinely useful.��</p>
+          <span>— Early reader community</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> ORPANTA · ARKVANTA</span>
+      <span>Digital books only.</span>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag">
+    <div class="drawer-header">
+      <h3>Your bag</h3>
+      <button class="close-btn" id="closeDrawer" type="button" aria-label="Close bag">×</button>
+    </div>
+    <div class="drawer-body">
+      <div id="bagItems" class="bag-list"></div>
+    </div>
+    <div class="drawer-footer">
+      <div class="totals">
+        <span>Total</span>
+        <strong id="totalPrice">₹0</strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" type="button">Proceed to checkout</button>
+    </div>
+  </aside>
+
+  <dialog class="dialog" id="paymentDialog">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <h3>Checkout</h3>
+        <button class="close-btn" id="dismissDialog" type="button" aria-label="Close checkout">×</button>
+      </div>
+
+      <form class="pay-form" id="payform">
+        <label>
+          Full name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <div class="pay-row">
+          <label>
+            Card number
+            <input type="text" name="card" placeholder="1234 5678 9012 3456" required>
+          </label>
+          <label>
+            Expiry
+            <input type="text" name="expiry" placeholder="MM/YY" required>
+          </label>
+        </div>
+
+        <label>
+          CVC
+          <input type="text" name="cvc" placeholder="123" required>
+        </label>
+
+        <button class="dialog-submit" type="submit">Pay now</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script>
+    const books = [
+      {
+        id: 'ai-made-simple',
+        title: 'AI Made Simple',
+        subtitle: 'A Beginner\'s Guide to Everyday AI Tools',
+        author: 'ARKVANTA',
+        price: 49,
+        accent: 'linear-gradient(135deg, #d9c9ff 0%, #f6d7b0 45%, #cde9d8 100%)',
+        short: 'AI'
+      },
+      {
+        id: 'visual-thinking',
+        title: 'Visual Thinking',
+        subtitle: 'Designing ideas that stick',
+        author: 'ARKVANTA',
+        price: 36,
+        accent: 'linear-gradient(135deg, #f8d7c2 0%, #d7bd91 50%, #d9c9ff 100%)',
+        short: 'VT'
+      },
+      {
+        id: 'deep-work',
+        title: 'Deep Work',
+        subtitle: 'Focus, clarity, and better output',
+        author: 'ARKVANTA',
+        price: 42,
+        accent: 'linear-gradient(135deg, #cde9d8 0%, #d9c9ff 35%, #d7bd91 100%)',
+        short: 'DW'
+      }
+    ];
+
+    const rate = { INR: 1, USD: 0.012, EUR: 0.011, GBP: 0.010, AED: 0.044 };
+    let bag = JSON.parse(localStorage.getItem('orpanta-bag') || '[]');
+    let currency = 'INR';
+
+    const catalogEl = document.getElementById('catalog');
+    const bagEl = document.getElementById('bagItems');
+    const bagToggle = document.getElementById('bagToggle');
+    const drawer = document.getElementById('drawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const totalPriceEl = document.getElementById('totalPrice');
+    const currencySelect = document.getElementById('currency');
+    const yearEl = document.getElementById('year');
+    const paymentDialog = document.getElementById('paymentDialog');
+    const dismissDialog = document.getElementById('dismissDialog');
+    const payForm = document.getElementById('payform');
+
+    function money(value) {
+      const rateValue = rate[currency] || 1;
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: currency === 'INR' ? 'INR' : currency,
+        maximumFractionDigits: 0
+      }).format(value * rateValue);
+    }
+
+    function syncCurrencyDisplay() {
+      const featuredPrice = document.getElementById('featuredPrice');
+      if (featuredPrice) {
+        featuredPrice.textContent = money(49);
+      }
+      renderCatalog();
+      renderBag();
+    }
+
+    function renderCatalog() {
+      catalogEl.innerHTML = books.map((book) => `
+        <article class="book-card">
+          <div class="book-card-cover" style="background:${book.accent};">
+            <div class="mini-cover" style="background:${book.accent};">
+              <div class="meta">ARKVANTA • 0${books.indexOf(book)+1}</div>
+              <div class="headline">${book.short}</div>
+              <div class="meta">${book.author}</div>
+            </div>
+          </div>
+          <div class="book-card-body">
+            <div class="book-topline">
+              <span>${book.author}</span>
+              <span>PDF</span>
+            </div>
+            <h3>${book.title}</h3>
+            <p>${book.subtitle}</p>
+            <div class="book-actions">
+              <div class="price-tag">${money(book.price)}<strong>USD</strong></div>
+              <button type="button" class="add-btn" data-id="${book.id}">Add to bag</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+
+      document.querySelectorAll('.add-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          const target = books.find(item => item.id === this.dataset.id);
+          if (!target) return;
+          const existing = bag.find(item => item.id === target.id);
+
+          if (existing) {
+            existing.qty += 1;
+          } else {
+            bag.push({ ...target, qty: 1 });
+          }
+
+          localStorage.setItem('orpanta-bag', JSON.stringify(bag));
+          renderBag();
+          openDrawer();
+        });
+      });
+    }
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      drawerOverlay.classList.add('open');
+    }
+
+    function closeDrawerPanel() {
+      drawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+    }
+
+    function renderBag() {
+      const count = bag.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById('bagcount').textContent = count;
+
+      if (!bag.length) {
+        bagEl.innerHTML = '<div class="empty-state">Your bag is empty.<br>Pick a book to begin.</div>';
+        totalPriceEl.textContent = money(0);
+        return;
+      }
+
+      bagEl.innerHTML = bag.map(item => `
+        <div class="bag-item">
+          <div class="bag-cover" style="background:${item.accent};">${item.short}</div>
+          <div>
+            <h4>${item.title}</h4>
+            <span>${money(item.price)} each</span>
+          </div>
+          <div>
+            <div class="qty">Qty ${item.qty}</div>
+            <button class="remove-btn" type="button" data-remove="${item.id}">Remove</button>
+          </div>
+        </div>
+      `).join('');
+
+      document.querySelectorAll('[data-remove]').forEach(button => {
+        button.addEventListener('click', function () {
+          const id = this.dataset.remove;
+          bag = bag.filter(item => item.id !== id);
+          localStorage.setItem('orpanta-bag', JSON.stringify(bag));
+          renderBag();
+        });
+      });
+
+      const total = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+      totalPriceEl.textContent = money(total);
+    }
+
+    currencySelect.addEventListener('change', function () {
+      currency = this.value;
+      syncCurrencyDisplay();
+    });
+
+    bagToggle.addEventListener('click', openDrawer);
+    closeDrawer.addEventListener('click', closeDrawerPanel);
+    drawerOverlay.addEventListener('click', closeDrawerPanel);
+
+    checkoutBtn.addEventListener('click', function () {
+      if (!bag.length) {
+        alert('Your bag is empty. Please add a book first.');
+        return;
+      }
+      closeDrawerPanel();
+      paymentDialog.showModal();
+    });
+
+    dismissDialog.addEventListener('click', function () {
+      paymentDialog.close();
+    });
+
+    payForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      bag = [];
+      localStorage.setItem('orpanta-bag', JSON.stringify(bag));
+      renderBag();
+      paymentDialog.close();
+      alert('Payment successful! Your digital book access is now unlocked.');
+    });
+
+    yearEl.textContent = new Date().getFullYear();
+    currencySelect.value = currency;
+    renderCatalog();
+    renderBag();
+    syncCurrencyDisplay();
+  </script>
+</body>
+</html>
